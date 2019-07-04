@@ -24,6 +24,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         myDatabase.setValue("We've got data!")
         
+        // User is logged in
+        if Auth.auth().currentUser != nil {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            // view controller currently being set in Storyboard as default will be overridden
+            let chatViewController = storyboard.instantiateViewController(withIdentifier: "chatNavBar")
+            window?.rootViewController = chatViewController
+        }
+        
         return true
         
     }

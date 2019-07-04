@@ -18,7 +18,7 @@
 		63E28B321B9A337600FBF6E0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E28B2D1B9A337600FBF6E0 /* RegisterViewController.swift */; };
 		63E28B331B9A337600FBF6E0 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E28B2E1B9A337600FBF6E0 /* WelcomeViewController.swift */; };
 		63EBB3051D98004B004175E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EBB3041D98004B004175E5 /* LaunchScreen.storyboard */; };
-		72EDD45F22CDC3A60069B9F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72EDD45E22CDC3A60069B9F6 /* GoogleService-Info.plist */; };
+		7281968D22CEBC5A0068E24E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7281968C22CEBC5A0068E24E /* GoogleService-Info.plist */; };
 		91AA288FE61DF0B9A11823D2 /* Pods_Flash_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D924157D603AF0159A7BE39 /* Pods_Flash_Chat.framework */; };
 		AD6D00E420EA766400B1782A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD6D00E320EA766400B1782A /* README.md */; };
 /* End PBXBuildFile section */
@@ -38,7 +38,7 @@
 		63E28B2D1B9A337600FBF6E0 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		63E28B2E1B9A337600FBF6E0 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		63EBB3041D98004B004175E5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		72EDD45E22CDC3A60069B9F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7281968C22CEBC5A0068E24E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		75CE8E3CF317DE8BCC2050F7 /* Pods-Flash Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat.debug.xcconfig"; path = "Target Support Files/Pods-Flash Chat/Pods-Flash Chat.debug.xcconfig"; sourceTree = "<group>"; };
 		7BE30B563FD5A3F2B03BD651 /* Pods-Flash Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat.release.xcconfig"; path = "Target Support Files/Pods-Flash Chat/Pods-Flash Chat.release.xcconfig"; sourceTree = "<group>"; };
 		AD6D00E320EA766400B1782A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 		72EDD45822CDBB7D0069B9F6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				72EDD45E22CDC3A60069B9F6 /* GoogleService-Info.plist */,
+				7281968C22CEBC5A0068E24E /* GoogleService-Info.plist */,
 				6321A9BA1B94EBA10053D2E7 /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -221,7 +221,7 @@
 				AD6D00E420EA766400B1782A /* README.md in Resources */,
 				63EBB3051D98004B004175E5 /* LaunchScreen.storyboard in Resources */,
 				6321A9E51B94EBE70053D2E7 /* MessageCell.xib in Resources */,
-				72EDD45F22CDC3A60069B9F6 /* GoogleService-Info.plist in Resources */,
+				7281968D22CEBC5A0068E24E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

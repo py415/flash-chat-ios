@@ -115,7 +115,11 @@ class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDe
         do {
             try Auth.auth().signOut()
             
-            navigationController?.popToRootViewController(animated: true)
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let welcomeNavBar = main.instantiateViewController(withIdentifier: "welcomeNavBar")
+            
+            let delegate = UIApplication.shared.delegate as! AppDelegate
+            delegate.window?.rootViewController = welcomeNavBar
         } catch {
             print("Error Detected! Failed to sign out!")
         }
