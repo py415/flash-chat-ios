@@ -1,29 +1,35 @@
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+# Flash Chat
 
-# Flash-Chat
+## Table of Contents
+1. [Overview](#Overview)
+2. [Product Spec](#Product-Spec)
+3. [App Walkthrough](#App-Walkthrough)
+4. [Open-Source libraries used](#Open-Source-libraries-used)
+5. [Credits](#Credits)
 
-## Our Goal
+## Overview
+### Description
 
-One of the most fundamental component of modern iOS apps is the Table View. Table Views are used everywhere from the Mail app to the Messages app. It’s a crucial part of every iOS developer’s tool belt. In this tutorial we’ll be getting to grips with Table Views, creating custom cells, and making our own cloud-based backend database. It’s going to be epic, so buckle up.
+Flash Chat is an internet based messaging app similar to WhatsApp, the popular messaging app that was bought by Facebook for $22 billion. We will be using a service called Firebase as a backend data server to store and retrieve our messages from the cloud.
 
-## What you will create
+## Product Spec
+### User Stories
 
-Flash Chat is an internet based messaging app similar to WhatsApp, the popular messaging app that was bought by Facebook for $22 billion. We will be using a service called Firebase as a backend data server to store and retrieve our messages from the cloud. 
+- [ ] User shall be able to login.
+- [ ] User shall be able to register for a new account.
+- [ ] User shall be able to send messages.
+- [ ] User shall be able to receive messages.
 
-## What you will learn
+## App Walkthrough
 
-* How to integrate third party libraries in your app.
-* How to store data in the cloud using Firebase.
-* How to query the Firebase database.
-* How to use Firebase for user authentication.
-* How to work with a UITableView.
-* How to use custom cells in a Table View.
-* How to embed View Controllers in a Navigation Controller and understanding the navigation stack.
-* How to create Segues for navigation.
-* How to make custom .xib files to modify native design components.
-* Using Grand Central Dispatch to queue asynchronous tasks.
+Here's a GIF of how the app works:
 
+<img src="ADD_GIF_LINK" width=250><br>
+
+## Open-source libraries used
+
+- [LIBRARY NAME](ADD_SOURCE_LINK_HERE) - Add a description here.
+
+## Credits
 
 >This is a companion project to The App Brewery's Complete App Developement Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
-
-![End Banner](Documentation/readme-end-banner.png)
