@@ -9,8 +9,8 @@
 import UIKit
 import Firebase
 
-class RegisterViewController: UIViewController {
-    
+class RegisterViewController: UIViewController, Alert {
+
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     
@@ -49,14 +49,6 @@ class RegisterViewController: UIViewController {
             }
         }
         
-    }
-    
-    func displayAlert(msgTitle: String, message: String, alertTitle: String = "OK", style: UIAlertAction.Style = .default) {
-        let alertController = UIAlertController(title: msgTitle, message: message, preferredStyle: .alert)
-        let action = UIAlertAction(title: alertTitle, style: style)
-        
-        alertController.addAction(action)
-        present(alertController, animated: true)
     }
     
 }
