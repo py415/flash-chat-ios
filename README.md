@@ -17,7 +17,7 @@ Flash Chat is an internet based messaging app similar to WhatsApp, the popular m
 
 - [X] User shall be able to see animated title in welcome screen.
 - [ ] User shall be able to login.
-- [ ] User shall be able to register for a new account.
+- [X] User shall be able to register for a new account.
 - [ ] User shall be able to send messages.
 - [ ] User shall be able to receive messages.
 
