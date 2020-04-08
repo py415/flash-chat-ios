@@ -19,9 +19,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
-        // Check if user is already logged in
-        authenticateUser()
-        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -52,30 +49,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
-}
-
-extension SceneDelegate {
-    
-    func authenticateUser() {
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        var controller: UIViewController!
-        
-        Auth.auth().addStateDidChangeListener { (_, user) in
-            if user != nil {
-                // User exists
-                print("User exists")
-                controller = storyboard.instantiateViewController(identifier: "ChatViewController")
-            } else {
-                // User does NOT exist
-                print("User does NOT exist")
-                controller = storyboard.instantiateViewController(identifier: "WelcomeViewController")
-            }
-            
-            let navigationController = UINavigationController(rootViewController: controller)
-            self.window?.rootViewController = navigationController
-        }
-        
-    }
-    
 }

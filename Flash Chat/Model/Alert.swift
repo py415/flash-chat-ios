@@ -8,9 +8,7 @@
 
 import UIKit
 
-protocol Alert {
-    
-}
+protocol Alert { }
 
 extension Alert where Self: UIViewController {
     

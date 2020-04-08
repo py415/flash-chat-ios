@@ -15,11 +15,12 @@ Flash Chat is an internet based messaging app similar to WhatsApp, the popular m
 ## Product Spec
 ### User Stories
 
-- [X] User shall be able to see animated title in welcome screen.
-- [X] User shall be able to login.
-- [X] User shall be able to register for a new account.
-- [ ] User shall be able to send messages.
-- [ ] User shall be able to receive messages.
+- [X] The current signed in user shall be persisted across app restarts.
+- [X] User shall be able to see the title animation in the welcome screen.
+- [X] User shall be able to log in and log out of his or her account.
+- [X] User shall be able to sign up to create a new account using Firebase authentication.
+- [X] User shall be able to send messages.
+- [X] User shall be able to receive messages.
 
 ## App Walkthrough
 
@@ -30,6 +31,7 @@ Here's a GIF of how the app works:
 ## Open-source libraries used
 
 - [CLTypingLabel](https://github.com/cl7/CLTypingLabel) - A lightweight UILabel subclass with character by character typewriter like animation in Swift.
+- [IQKeyboardManagerSwift](https://github.com/hackiftekhar/IQKeyboardManager) - A codeless drop-in universal library allows to prevent issues of keyboard sliding up and cover UITextField/UITextView.
 
 ## Credits
 
