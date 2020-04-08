@@ -19,7 +19,7 @@ class ChatViewController: UIViewController {
         
         super.viewDidLoad()
         
-        title = "⚡️FlashChat"
+        title = K.appName
         navigationItem.hidesBackButton = true
 
     }
@@ -31,6 +31,7 @@ class ChatViewController: UIViewController {
         
         do {
             try Auth.auth().signOut()
+            
             navigationController?.popToRootViewController(animated: true)
             print("Logged out of user.")
         } catch let signOutError as NSError {

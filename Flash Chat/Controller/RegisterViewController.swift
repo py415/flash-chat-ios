@@ -44,7 +44,7 @@ class RegisterViewController: UIViewController, Alert {
                     // Navigate to ChatViewController
                     print("Successfully registered user: \(email)")
                     self.displayAlert(msgTitle: "Success", message: "You have successfully registered your account.", alertTitle: "OK", style: .default)
-                    self.performSegue(withIdentifier: "RegisterToChat", sender: self)
+                    self.performSegue(withIdentifier: K.loginSegue, sender: self)
                 }
             }
         }

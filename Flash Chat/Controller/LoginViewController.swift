@@ -42,7 +42,7 @@ class LoginViewController: UIViewController, Alert {
                 } else {
                     // Navigate to ChatViewController
                     print("Successfully logged into: \(email)")
-                    self.performSegue(withIdentifier: "LoginToChat", sender: self)
+                    self.performSegue(withIdentifier: K.loginSegue, sender: self)
                 }
             }
         }

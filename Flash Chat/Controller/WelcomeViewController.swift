@@ -8,6 +8,7 @@
 
 import UIKit
 import CLTypingLabel
+import Firebase
 
 class WelcomeViewController: UIViewController {
 
@@ -18,23 +19,8 @@ class WelcomeViewController: UIViewController {
         
         super.viewDidLoad()
         
-        titleLabel.text = "⚡️FlashChat"
+        titleLabel.text = K.appName
         
     }
-    
-//    func animateText(_ text: String) {
-//
-//        var charIndex = 0.0
-//
-//        for letter in text {
-//
-//            Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { (_) in
-//                self.titleLabel.text?.append(letter)
-//            }
-//
-//            charIndex += 1
-//        }
-//
-//    }
 
 }
