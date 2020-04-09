@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import IQKeyboardManagerSwift
 
 class ChatViewController: UIViewController {
     
@@ -35,6 +36,9 @@ class ChatViewController: UIViewController {
         
         // Load messages
         loadMessages()
+        
+        // Remove gap between keyboard and text field
+        messageTextfield.keyboardDistanceFromTextField = 0
         
     }
     
