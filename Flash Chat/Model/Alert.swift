@@ -20,4 +20,12 @@ extension Alert where Self: UIViewController {
         present(alertController, animated: true)
     }
     
+    func displayAlert(msgTitle: String, message: String, alertTitle: String = "OK", alertStyle: UIAlertAction.Style = .default, alertHandle: ((UIAlertAction) -> Void)?) {
+        let alertController = UIAlertController(title: msgTitle, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: alertTitle, style: alertStyle, handler: alertHandle)
+        
+        alertController.addAction(action)
+        present(alertController, animated: true)
+    }
+    
 }

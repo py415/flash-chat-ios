@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class RegisterViewController: UIViewController, Alert {
-
+    
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     
@@ -43,8 +43,10 @@ class RegisterViewController: UIViewController, Alert {
                 } else {
                     // Navigate to ChatViewController
                     print("Successfully registered user: \(email)")
-                    self.displayAlert(msgTitle: "Success", message: "You have successfully registered your account.", alertTitle: "OK", style: .default)
-                    self.performSegue(withIdentifier: K.loginSegue, sender: self)
+                    
+                    self.displayAlert(msgTitle: "Success", message: "You have successfully registered your account.") { (_) in
+                        self.performSegue(withIdentifier: K.registerSegue, sender: self)
+                    }
                 }
             }
         }
