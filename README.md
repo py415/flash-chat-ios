@@ -2,7 +2,7 @@
 
 ## Table of Contents
 1. [Overview](#Overview)
-2. [Product Spec](#Product-Spec)
+2. [Product Specs](#Product-Specs)
 3. [App Walkthrough](#App-Walkthrough)
 4. [Open-Source libraries used](#Open-Source-libraries-used)
 5. [Credits](#Credits)
@@ -12,7 +12,7 @@
 
 Flash Chat is an internet based messaging app similar to WhatsApp, the popular messaging app that was bought by Facebook for $22 billion. We will be using a service called Firebase as a backend data server to store and retrieve our messages from the cloud.
 
-## Product Spec
+## Product Specs
 ### User Stories
 
 - [X] The current signed in user shall be persisted across app restarts.
@@ -26,7 +26,7 @@ Flash Chat is an internet based messaging app similar to WhatsApp, the popular m
 
 Here's a GIF of how the app works:
 
-<img src="https://i.imgur.com/giKx4hg.gif" width=250><br>
+<img src="https://user-images.githubusercontent.com/35745973/81492552-a107c700-924d-11ea-8737-bb045010e807.gif" width=250><br>
 
 ## Open-source libraries used
 
@@ -35,4 +35,4 @@ Here's a GIF of how the app works:
 
 ## Credits
 
->This is a companion project to The App Brewery's Complete App Developement Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+>This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
