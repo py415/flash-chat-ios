@@ -5,7 +5,8 @@
 2. [Product Specs](#Product-Specs)
 3. [App Walkthrough](#App-Walkthrough)
 4. [Open-Source libraries used](#Open-Source-libraries-used)
-5. [Credits](#Credits)
+5. [Backend](#Backend)
+6. [Credits](#Credits)
 
 ## Overview
 ### Description
@@ -32,6 +33,10 @@ Here's a GIF of how the app works:
 
 - [CLTypingLabel](https://github.com/cl7/CLTypingLabel) - A lightweight UILabel subclass with character by character typewriter like animation in Swift.
 - [IQKeyboardManagerSwift](https://github.com/hackiftekhar/IQKeyboardManager) - A codeless drop-in universal library allows to prevent issues of keyboard sliding up and cover UITextField/UITextView.
+
+## Backend
+
+- [Firebase](https://firebase.google.com/) - Is a Backend-as-a-Service (BaaS) framework that helps you quickly develop high-quality apps and grow your business.
 
 ## Credits
 
