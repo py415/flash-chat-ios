@@ -12,14 +12,15 @@ import IQKeyboardManagerSwift
 
 class ChatViewController: UIViewController {
     
-    // Outlets
+    // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextfield: UITextField!
     @IBOutlet weak var sendMessageButton: UIButton!
     
-    // Properties
-    var messages: [Message] = []
-    let db = Firestore.firestore()
+    // MARK: - Properties
+    private var messages: [Message] = []
+    
+    private let db = Firestore.firestore()
     
     override func viewDidLoad() {
         
@@ -42,38 +43,7 @@ class ChatViewController: UIViewController {
         
     }
     
-    func loadMessages() {
-        
-        // Fetch messages from Firestore
-        db.collection(K.FStore.collectionName)
-            .order(by: K.FStore.dateField)
-            .addSnapshotListener { (querySnapshot, error) in
-                
-                self.messages = []
-                
-                if let e = error {
-                    print("There was an issue retrieving data from Firestore.", e.localizedDescription)
-                } else {
-                    if let snapshotDocuments = querySnapshot?.documents {
-                        for doc in snapshotDocuments {
-                            let data = doc.data()
-                            if let messageSender = data[K.FStore.senderField] as? String, let messageBody = data[K.FStore.bodyField] as? String {
-                                let newMessage = Message(sender: messageSender, body: messageBody)
-                                self.messages.append(newMessage)
-                                
-                                DispatchQueue.main.async {
-                                    self.tableView.reloadData()
-                                    // Show most recent message above text field
-                                    let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
-                                    self.tableView.scrollToRow(at: indexPath, at: .top, animated: false)
-                                }
-                            }
-                        }
-                    }
-                }
-        }
-        
-    }
+    // MARK: - IBAction Section
     
     @IBAction func sendPressed(_ sender: UIButton) {
         
@@ -107,6 +77,41 @@ class ChatViewController: UIViewController {
             print("Logged out of user.")
         } catch let signOutError as NSError {
             print("Error signing out: %@", signOutError)
+        }
+        
+    }
+    
+    // MARK: - Private Function Section
+    
+    private func loadMessages() {
+        
+        // Fetch messages from Firestore
+        db.collection(K.FStore.collectionName)
+            .order(by: K.FStore.dateField)
+            .addSnapshotListener { (querySnapshot, error) in
+                
+                self.messages = []
+                
+                if let e = error {
+                    print("There was an issue retrieving data from Firestore.", e.localizedDescription)
+                } else {
+                    if let snapshotDocuments = querySnapshot?.documents {
+                        for doc in snapshotDocuments {
+                            let data = doc.data()
+                            if let messageSender = data[K.FStore.senderField] as? String, let messageBody = data[K.FStore.bodyField] as? String {
+                                let newMessage = Message(sender: messageSender, body: messageBody)
+                                self.messages.append(newMessage)
+                                
+                                DispatchQueue.main.async {
+                                    self.tableView.reloadData()
+                                    // Show most recent message above text field
+                                    let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
+                                    self.tableView.scrollToRow(at: indexPath, at: .top, animated: false)
+                                }
+                            }
+                        }
+                    }
+                }
         }
         
     }
@@ -148,6 +153,8 @@ extension ChatViewController: UITableViewDataSource {
     }
     
 }
+
+// MARK: - UITextFieldDelegate Section
 
 extension ChatViewController: UITextFieldDelegate {
     

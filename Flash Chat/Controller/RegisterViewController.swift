@@ -11,8 +11,11 @@ import Firebase
 
 class RegisterViewController: UIViewController, Alert {
     
+    // MARK: - Outlets
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
+    
+    // MARK: - IBAction Section
     
     @IBAction func registerPressed(_ sender: UIButton) {
         

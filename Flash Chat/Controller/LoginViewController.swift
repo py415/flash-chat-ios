@@ -11,10 +11,12 @@ import Firebase
 
 class LoginViewController: UIViewController, Alert {
 
-    // Outlets
+    // MARK: - Outlets
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
 
+    // MARK: - IBAction Section
+    
     @IBAction func loginPressed(_ sender: UIButton) {
     
         if let email = emailTextfield.text, let password = passwordTextfield.text {

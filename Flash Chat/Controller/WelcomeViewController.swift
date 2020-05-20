@@ -12,10 +12,10 @@ import Firebase
 
 class WelcomeViewController: UIViewController {
 
-    // Outlets
+    // MARK: - Outlets
     @IBOutlet weak var titleLabel: CLTypingLabel!
     
-    // Properties
+    // MARK: - Properties
     var handle: AuthStateDidChangeListenerHandle?
     
     override func viewDidLoad() {
@@ -47,7 +47,9 @@ class WelcomeViewController: UIViewController {
         
     }
     
-    func authenticateUser() {
+    // MARK: - Private Function Section
+    
+    private func authenticateUser() {
 
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         var controller: UIViewController!

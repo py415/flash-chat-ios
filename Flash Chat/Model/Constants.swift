@@ -10,6 +10,7 @@ import Foundation
 
 struct K {
     
+    // MARK: - Properties
     static let appName = "⚡️FlashChat"
     static let cellIdentifier = "ReusableCell"
     static let cellNibName = "MessageCell"

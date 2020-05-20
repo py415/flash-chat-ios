@@ -10,6 +10,7 @@ import Foundation
 
 struct Message {
     
+    // MARK: - Properties
     let sender: String
     let body: String
     
