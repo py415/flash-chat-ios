@@ -4,7 +4,7 @@
 1. [Overview](#Overview)
 2. [Product Specs](#Product-Specs)
 3. [App Walkthrough](#App-Walkthrough)
-4. [Open-Source libraries used](#Open-Source-libraries-used)
+4. [Libraries](#Libraries)
 5. [Backend](#Backend)
 6. [Credits](#Credits)
 
@@ -27,9 +27,9 @@ Flash Chat is an internet based messaging app similar to WhatsApp, the popular m
 
 Here's a GIF of how the app works:
 
-<img src="https://user-images.githubusercontent.com/35745973/81492552-a107c700-924d-11ea-8737-bb045010e807.gif" width=250><br>
+<img src="https://user-images.githubusercontent.com/35745973/81492552-a107c700-924d-11ea-8737-bb045010e807.gif" width=250>
 
-## Open-source libraries used
+## Libraries
 
 - [CLTypingLabel](https://github.com/cl7/CLTypingLabel) - A lightweight UILabel subclass with character by character typewriter like animation in Swift.
 - [IQKeyboardManagerSwift](https://github.com/hackiftekhar/IQKeyboardManager) - A codeless drop-in universal library allows to prevent issues of keyboard sliding up and cover UITextField/UITextView.
@@ -40,4 +40,4 @@ Here's a GIF of how the app works:
 
 ## Credits
 
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+>This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/).
